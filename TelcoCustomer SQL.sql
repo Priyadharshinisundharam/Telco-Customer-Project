@@ -1,6 +1,7 @@
 SELECT * FROM telcocustomer.telco_cleaned;
 
 select * FROM telcocustomer.`telco_cleaned` WHERE Gender = "Male"
+<<<<<<< HEAD
 
 SELECT * FROM telcocustomer.`telco_cleaned` WHERE Gender = "Female"
 
@@ -15,3 +16,5 @@ SELECT COUNT('Gender') FROM telcocustomer.`telco_cleaned` WHERE Gender = "Male"
 SELECT COUNT('Gender') FROM telcocustomer.`telco_cleaned` WHERE Gender = "Female"
 
 SELECT COUNT(*) from telcocustomer.`telco_cleaned`
+=======
+>>>>>>> 164f0abc51fff54e31fb7ffaf4b4e97bbc9df151
