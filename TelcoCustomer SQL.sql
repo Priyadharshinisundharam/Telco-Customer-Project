@@ -1,7 +1,6 @@
 SELECT * FROM telcocustomer.telco_cleaned;
 
 select * FROM telcocustomer.`telco_cleaned` WHERE Gender = "Male"
-<<<<<<< HEAD
 
 SELECT * FROM telcocustomer.`telco_cleaned` WHERE Gender = "Female"
 
@@ -16,3 +15,28 @@ SELECT COUNT('Gender') FROM telcocustomer.`telco_cleaned` WHERE Gender = "Male"
 SELECT COUNT('Gender') FROM telcocustomer.`telco_cleaned` WHERE Gender = "Female"
 
 SELECT COUNT(*) from telcocustomer.`telco_cleaned`
+
+# which payment method is the most popular
+SELECT COUNT('Payment_Method') FROM telcocustomer.`telco_cleaned` WHERE Payment_Method = "Bank Withdrawal"
+
+SELECT COUNT('Payment_Method') FROM telcocustomer.`telco_cleaned` WHERE Payment_Method = "Credit Card"
+
+SELECT COUNT('Payment_Method') FROM telcocustomer.`telco_cleaned` WHERE Payment_Method = "Mailed Check"
+
+SELECT * from telcocustomer.`telco_cleaned` WHERE Customer_Status = 'Churned'
+
+SELECT COUNT('Customer_Status') FROM telcocustomer.`telco_cleaned` WHERE Customer_Status = 'Churned'
+
+SELECT * from telcocustomer.`telco_cleaned` WHERE Customer_Status = 'Joined'
+
+SELECT COUNT('Customer_Status') FROM telcocustomer.`telco_cleaned` WHERE Customer_Status = 'Joined'
+
+SELECT * FROM telcocustomer.`telco_cleaned` WHERE Customer_Status = 'Stayed'
+
+SELECT COUNT('Customer_Status') FROM telcocustomer.`telco_cleaned` WHERE Customer_Status = 'Stayed'
+
+# the count of customers under 30
+SELECT COUNT('Age') FROM telcocustomer.`telco_cleaned` WHERE Age < 30
+
+# the count of customers more than 30
+SELECT COUNT('Age') FROM telcocustomer.`telco_cleaned` WHERE Age > 30
